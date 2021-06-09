@@ -7,14 +7,7 @@
     <u-read-more show-height="300">
       <rich-text :nodes="desc" class="desc"></rich-text>
     </u-read-more>
-    <c-multimedia
-      v-for="(item,index) of list"
-      :type="item.type"
-      :key="index"
-      :src="item.src"
-      :poster="item.poster"
-      mode="widthFix"
-    ></c-multimedia>
+    <c-multimedia v-for="(item,index) of list" :key="index" :src="item.src" mode="widthFix"></c-multimedia>
   </div>
 </template>
 

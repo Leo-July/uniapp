@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :style="[styleWrap]">
     <video
       v-if="isVideo"
       :src="src"
@@ -46,6 +46,10 @@ export default {
     borderRadius: {
       type: [String, Number],
       default: 0,
+    },
+    styleWrap: {
+      type: [Object],
+      default: () => {},
     },
   },
   data() {
