@@ -7,3 +7,6 @@
 ```vue
 <c-multimedia :key="index" :src="item.src" mode="widthFix"></c-multimedia>
 ```
+
+
+test
